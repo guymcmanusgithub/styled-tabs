@@ -12,8 +12,8 @@ import styled from 'styled-components';
 const Tabs = styled(StyledTabs)`
   font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 12px;
-  width: ${props => props.vertical ? '40%' : '100vw'};
-  height: ${props => props.vertical ? '100vh' : '10vh'};
+  width: ${props => props.vertical ? '40vw' : '100vw'};
+  height: ${props => props.vertical ? '100vh' : '8vh'};
   display: flex;
   margin: 0;
   background-color: ${props => props.vertical ? 'red' : 'black'};
@@ -23,12 +23,13 @@ Tabs.tabsRole = 'Tabs'
 
 const TabList = styled(StyledTabList)`
   margin: 0;
-  width: ${props => props.vertical ? '15%' : '100%'};
+  width: ${props => props.vertical ? '20%' : '100%'};
   height: ${props => props.vertical ? '100%' : '100%'};
   display: flex;
   flex-direction: ${props => props.vertical ? 'column' : 'row'};
   list-style: none;
   background-color: blue;
+  padding: 0;
 `
 StyledTabList.tabsRole = 'TabList';
 
@@ -39,13 +40,12 @@ const Tab = styled(StyledTab)`
   align-items: center;
   box-sizing: border-box;
   margin: 0;
-  width: ${props => props.vertical ? '100%' : '30%'};
+  width: ${props => props.vertical ? '100%' : '17%'};
   height: ${props => props.vertical ? '10%' : '100%'};
   user-select: none;
   color: white;
   cursor: arrow;
-  background-color: ${props => props.vertical ? 'black' : 'black'};
-  margin-left: ${props => props.vertical ? '-53%' : '0'};
+  background-color: black;
   
   &:hover { 
     ${props => props.vertical ? 'border-right: 5px solid red' : 'border-bottom: 5px solid red'};
@@ -75,7 +75,7 @@ StyledTabPanel.tabsRole = 'TabPanel';
 
 const NavTab = props => {
 
-  const { vertical } = props
+  const vertical = false
 
       return (
         <Tabs
