@@ -73,47 +73,60 @@ import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 const StyledTabs = styled(Tabs)`
   font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 12px;
-  width: 50%;
-  color: red;
+  width: 40%;
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
 `;
 
 const StyledTabList = styled(TabList)`
-  list-style-type: none;
-  padding: 4px;
-  display: flex;
   margin: 0;
-  color: pink;
+  width: 25%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: black;
 `;
 StyledTabList.tabsRole = 'TabList';
 
 const StyledTab = styled(Tab)`
-  margin-right: 4px;
-  border: 1px solid black;
-  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 100%;
+  min-height: 7vh;
   user-select: none;
-  color: yellow;
+  color: white;
   cursor: arrow;
+  background-color: black;
+  margin-left: -35%;
 
   &.is-selected {
     // color: white;
     // background: black;
-    border-bottom: 1px solid white;
   }
 
   &:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 0, 255, .5)
   }
+
+  &:hover {
+    border-right: 5px solid red;
+  }
 `;
 StyledTab.tabsRole = 'Tab';
 
 const StyledTabPanel = styled(TabPanel)`
+  margin: 0;
   display: none;
-  min-height: 40vh;
+  min-height: 60%;
+  width: 100%;
   border: 1px solid black;
-  padding: 4px;
   color: blue;
-  margin-top: -5px;
 
   &.is-selected {
     display: block;
