@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { render } from 'react-dom';
-import { TabPanel as StyledTabPanel } from './TabPanel';
+import { TabPanel as StyledTabPanel } from 'react-tabs';
 import { Tabs as StyledTabs } from 'react-tabs'
 import { TabList as StyledTabList } from 'react-tabs'
 import { Tab as StyledTab } from 'react-tabs'
