@@ -63,7 +63,7 @@
 // }
 
 // export default App;
-import React from 'react';
+import React, { useState } from 'react';
 // import { render } from 'react-dom';
 
 import styled from 'styled-components';
@@ -81,7 +81,7 @@ const StyledTabs = styled(Tabs)`
 
 const StyledTabList = styled(TabList)`
   margin: 0;
-  width: 25%;
+  width: 15%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ const StyledTab = styled(Tab)`
   color: white;
   cursor: arrow;
   background-color: black;
-  margin-left: -35%;
+  margin-left: -53%;
 
   &.is-selected {
     // color: white;
@@ -124,31 +124,40 @@ const StyledTabPanel = styled(TabPanel)`
   margin: 0;
   display: none;
   min-height: 60%;
-  width: 100%;
+  width: 60%;
   border: 1px solid black;
   color: blue;
 
-  &.is-selected {
+  &.true {
     display: block;
   }
 `;
 StyledTabPanel.tabsRole = 'TabPanel';
 
-const App = () => (
-  <StyledTabs
-    selectedTabClassName='is-selected'
-    selectedTabPanelClassName='is-selected'
-  >
-    <StyledTabList>
-      <StyledTab>Tab 1</StyledTab>
-      <StyledTab>Tab 2</StyledTab>
-      <StyledTab>Tab 3</StyledTab>
-    </StyledTabList>
-    <StyledTabPanel>Panel 1</StyledTabPanel>
-    <StyledTabPanel>Panel 2</StyledTabPanel>
-    <StyledTabPanel>Panel 3</StyledTabPanel>
-  </StyledTabs>
-);
+const App = props => {
+  
+  const [PanelToggle, setPanelToggle] = useState(false)
+
+  const handleToggle = () => {
+    setPanelToggle(!PanelToggle)
+  }
+
+    return (
+      <StyledTabs
+        selectedTabClassName='is-selected'
+        selectedTabPanelClassName={PanelToggle}
+      >
+        <StyledTabList>
+          <StyledTab onClick={handleToggle}>Tab 1</StyledTab>
+          <StyledTab onClick={handleToggle}>Tab 2</StyledTab>
+          <StyledTab onClick={handleToggle}>Tab 3</StyledTab>
+        </StyledTabList>
+        <StyledTabPanel>Panel 1</StyledTabPanel>
+        <StyledTabPanel>Panel 2</StyledTabPanel>
+        <StyledTabPanel>Panel 3</StyledTabPanel>
+      </StyledTabs>
+    )
+};
 
 
 export default App;
