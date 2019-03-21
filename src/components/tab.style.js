@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import { render } from 'react-dom';
-import { TabPanel as StyledTabPanel } from 'react-tabs';
-import { Tabs as StyledTabs } from 'react-tabs'
-import { TabList as StyledTabList } from 'react-tabs'
-import { Tab as StyledTab } from 'react-tabs'
+import StyledTabPanel from './TabPanel';
+import StyledTabs from './Tabs'
+import StyledTabList from './TabList'
+import StyledTab from './Tab'
+// import { Tab as StyledTab } from 'react-tabs'
 
 import styled from 'styled-components';
 
