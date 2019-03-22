@@ -1,7 +1,7 @@
 import StyledTabPanel from './tab-panel';
-import StyledTabs from './BANANAtabs'
+import StyledTabs from './tabs'
 import StyledTabList from './tab-list'
-import StyledTab from './APPLEtab.js'
+import StyledTab from './tab.js'
 import styled from 'styled-components';
 
 export const Tabs = styled(StyledTabs)`
