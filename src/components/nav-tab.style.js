@@ -2,7 +2,7 @@ import React from 'react';
 import StyledTabPanel from './tab-panel';
 import StyledTabs from './tabs'
 import StyledTabList from './tab-list'
-import StyledTab from './tab'
+import StyledTab from './tab.js'
 
 import styled from 'styled-components';
 

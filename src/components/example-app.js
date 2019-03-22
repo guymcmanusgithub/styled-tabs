@@ -14,10 +14,12 @@ export const ExampleApp = () => {
       <Tabs 
         forceRenderTabPanel={true}
         selectedTabPanelClassName='selected'
+        selectedTabClassName='selected'
+        disabledTabClassName='disabled'
         >
         <TabList>
-          <Tab>React</Tab>
-          <Tab>Ember</Tab>
+          <Tab >React</Tab>
+          <Tab disabled>Ember</Tab>
           <Tab>Angular</Tab>
 
           <span>+</span>
