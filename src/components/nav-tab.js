@@ -2,7 +2,7 @@ import React from 'react';
 import { Tabs, Tab, TabList, TabPanel} from './nav-tab.style'
 
 const NavTab = props => {
-    const vertical = true
+    const { vertical } = props
   
         return (
           <Tabs
