@@ -1,6 +1,6 @@
 import React from 'react';
 import NavTab from './components/nav-tab'
-import ExampleApp from './components/example-app';
+import ExampleApp from './examples/example-app'
 
 const App = props => {
 

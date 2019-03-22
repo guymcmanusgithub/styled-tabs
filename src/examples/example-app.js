@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Tab, TabList, TabPanel} from './styled-components.style'
+import { Tabs, Tab, TabList, TabPanel} from '../examples/styled-components.style'
 
 
 export const ExampleApp = () => {
