@@ -2,12 +2,8 @@ import React from 'react'
 
 import { storiesOf } from '@storybook/react'
 import { withKnobs, boolean} from '@storybook/addon-knobs/react'
-// import { mount } from 'enzyme'
-// import { specs, describe, it } from 'storybook-addon-specifications'
-// import { expect } from 'chai'
-// import expect from 'expect'
 
-import NavTab from './tab.style'
+import NavTab from './nav-tab'
 
 
 storiesOf('NavTab', module)

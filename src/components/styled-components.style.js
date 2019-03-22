@@ -1,18 +1,22 @@
+import StyledTabPanel from './tab-panel';
+import StyledTabs from './tabs'
+import StyledTabList from './tab-list'
+import StyledTab from './tab'
 import styled from 'styled-components';
 
-export const Tabs = styled.div`
+export const Tabs = styled(StyledTabs)`
     -webkit-tap-highlight-color: transparent;
 `
 
 
-export const TabList = styled.ul`
+export const TabList = styled(StyledTabList)`
     border-bottom: 1px solid #aaa;
     margin: 0 0 10px;
     padding: 0;
 `
   
 
-export const Tab = styled.li`
+export const Tab = styled(StyledTab)`
     display: inline-block;
     border: 1px solid transparent;
     border-bottom: none;
@@ -52,10 +56,10 @@ export const Tab = styled.li`
 `
 
 
-export const TabPanel = styled.div`
+export const TabPanel = styled(StyledTabPanel)`
     display: none;
 
-    &:selected {
+    &.selected {
         display: block;
     }
 `

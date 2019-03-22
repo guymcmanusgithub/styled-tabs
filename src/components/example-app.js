@@ -1,9 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Tab, Tabs, TabList, TabPanel } from './StyledComponents';
-// import '../../style/react-tabs.css';
-import './StyledComponents';
-
+import { Tabs, Tab, TabList, TabPanel} from './styled-components.style'
 
 
 export const ExampleApp = () => {
@@ -15,7 +11,10 @@ export const ExampleApp = () => {
         <li>use arrow keys to navigate focused tabs</li>
       </ul>
 
-      <Tabs forceRenderTabPanel={true}>
+      <Tabs 
+        forceRenderTabPanel={true}
+        selectedTabPanelClassName='selected'
+        >
         <TabList>
           <Tab>React</Tab>
           <Tab>Ember</Tab>
@@ -62,7 +61,9 @@ export const ExampleApp = () => {
         </TabPanel>
       </Tabs>
 
-      <Tabs>
+      <Tabs
+        selectedTabPanelClassName='selected'
+      >
         <TabList>
           <Tab>Mario</Tab>
           <Tab disabled>Luigi</Tab>
@@ -87,7 +88,9 @@ export const ExampleApp = () => {
         </TabPanel>
       </Tabs>
 
-      <Tabs>
+      <Tabs
+        selectedTabPanelClassName='selected'
+      >
         <TabList>
           <small style={{ padding: '0 10px' }}>Tabs:</small>
           <Tab>Tab A</Tab>
@@ -113,7 +116,5 @@ export const ExampleApp = () => {
     </div>
   );
 };
-
-// render(<App />, document.getElementById('example'));
 
 export default ExampleApp
