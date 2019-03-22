@@ -52,7 +52,7 @@ export const Tab = styled(StyledTab)`
 export const TabPanel = styled(StyledTabPanel)`
   margin: 0;
   display: none;
-  width: 75%;
+  width: ${props => props.vertical ? '75%' : '100%'};
   border: 1px solid black;
   color: blue;
 
