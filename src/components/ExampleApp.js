@@ -1,10 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { Tab, Tabs, TabList, TabPanel } from './StyledComponents';
-// import '../../style/react-tabs.css';
-import './StyledComponents';
-
-
 
 export const ExampleApp = () => {
   return (
@@ -15,11 +10,14 @@ export const ExampleApp = () => {
         <li>use arrow keys to navigate focused tabs</li>
       </ul>
 
-      <Tabs forceRenderTabPanel={true}>
+      <Tabs 
+        forceRenderTabPanel={true}
+        selectedTabPanelClassName='selected'
+      >
         <TabList>
           <Tab>React</Tab>
           <Tab>Ember</Tab>
-          <Tab>Angular</Tab>
+          <Tab >Angular</Tab>
 
           <span>+</span>
         </TabList>
@@ -61,7 +59,7 @@ export const ExampleApp = () => {
           <p>Source: <a href="https://angularjs.org/" target="_blank">Angular</a></p>
         </TabPanel>
       </Tabs>
-
+{/* 
       <Tabs>
         <TabList>
           <Tab>Mario</Tab>
@@ -109,7 +107,7 @@ export const ExampleApp = () => {
           <h2>This is Tab C</h2>
           <p>Just mind that the output might be invalid HTML (<code>{'<div>'}</code> inside a <code>{'<ul>'}</code> for instance).</p>
         </TabPanel>
-      </Tabs>
+      </Tabs> */}
     </div>
   );
 };

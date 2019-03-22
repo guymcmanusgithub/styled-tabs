@@ -6,7 +6,7 @@ const App = props => {
 
     return (
       <>
-        <NavTab/>
+        {/* <NavTab/> */}
         <ExampleApp/>
       </>
     )
