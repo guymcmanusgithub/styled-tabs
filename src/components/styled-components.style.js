@@ -26,14 +26,14 @@ export const Tab = styled(StyledTab)`
     padding: 6px 12px;
     cursor: pointer;
 
-    &:selected {
+    &.selected {
         background: #fff;
         border-color: #aaa;
-        color: purple;
+        color: black;
         border-radius: 5px 5px 0 0;
     }
 
-    &:disabled {
+    &.disabled {
         color: GrayText;
         cursor: default;
     }

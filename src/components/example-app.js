@@ -14,6 +14,7 @@ export const ExampleApp = () => {
       <Tabs 
         forceRenderTabPanel={true}
         selectedTabPanelClassName='selected'
+        selectedTabClassName='selected'
         >
         <TabList>
           <Tab>React</Tab>
@@ -63,6 +64,8 @@ export const ExampleApp = () => {
 
       <Tabs
         selectedTabPanelClassName='selected'
+        selectedTabClassName='selected'
+        disabledTabClassName='disabled'
       >
         <TabList>
           <Tab>Mario</Tab>
@@ -90,6 +93,7 @@ export const ExampleApp = () => {
 
       <Tabs
         selectedTabPanelClassName='selected'
+        selectedTabClassName='selected'
       >
         <TabList>
           <small style={{ padding: '0 10px' }}>Tabs:</small>

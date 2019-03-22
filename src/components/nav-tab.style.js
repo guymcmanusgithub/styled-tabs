@@ -20,7 +20,7 @@ export const Tabs = styled(StyledTabs)`
 
 export const TabList = styled(StyledTabList)`
   margin: 0;
-  width: ${props => props.vertical ? '35%' : '100%'};
+  width: ${props => props.vertical ? '25%' : '100%'};
   height: ${props => props.vertical ? '100%' : '100%'};
   display: flex;
   flex-direction: ${props => props.vertical ? 'column' : 'row'};
@@ -44,19 +44,15 @@ export const Tab = styled(StyledTab)`
   background-color: black;
   
   &:hover { 
-    ${props => props.vertical ? 'border-right: 5px solid red' : 'border-bottom: 5px solid red'};
+    ${props => props.vertical ? 'border-right: 3px solid red' : 'border-bottom: 3px solid red'};
   }
-
-  // &:hover {
-  //   border-right: 5px solid red;
-  // }
   `
 
 
 export const TabPanel = styled(StyledTabPanel)`
   margin: 0;
   display: none;
-  width: 100%;
+  width: 75%;
   border: 1px solid black;
   color: blue;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Tabs, Tab, TabList, TabPanel} from './nav-tab.style'
 
 const NavTab = props => {
-    const { vertical } = props
+    const vertical = true
   
         return (
           <Tabs
@@ -10,9 +10,9 @@ const NavTab = props => {
             selectedTabPanelClassName='selected'
           >
             <TabList vertical={vertical}>
-              <Tab vertical={vertical}>Tab 1</Tab>
-              <Tab vertical={vertical}>Tab 2</Tab>
-              <Tab vertical={vertical}>Tab 3</Tab>
+              <Tab vertical={vertical}>Home</Tab>
+              <Tab vertical={vertical}>Pay</Tab>
+              <Tab vertical={vertical}>Details</Tab>
             </TabList>
             <TabPanel vertical={vertical}>Panel 1</TabPanel>
             <TabPanel vertical={vertical}>Panel 2</TabPanel>
